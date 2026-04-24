@@ -1,0 +1,25 @@
+{
+  "name": "saucedemo-automation",
+  "version": "1.0.0",
+  "description": "Selenium WebDriver automation testing for saucedemo.com",
+  "scripts": {
+    "test": "npx mocha tests/**/*.test.js --timeout 260000",
+    "test:login": "npx mocha tests/login.test.js --timeout 260000",
+    "test:sort": "npx mocha tests/sort.test.js --timeout 260000"
+  },
+  "keywords": [
+    "selenium",
+    "automation",
+    "testing",
+    "saucedemo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.27.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^147.0.4",
+    "mocha": "^10.8.2"
+  }
+}
